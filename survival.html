@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survival Kit | Campus Compass - Amrita Amaravati</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="loader">
+    <div class="loader-text">Survival <span>Kit</span></div>
+    <div class="loader-bar"><div class="loader-bar-inner"></div></div>
+  </div>
+  <div class="progress-bar"></div>
+  <div class="bg-animation">
+    <div class="orb"></div><div class="orb"></div><div class="orb"></div>
+  </div>
+  <canvas id="particle-canvas"></canvas>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">CC</div>
+      <div class="logo-text">Campus <span>Compass</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="clubs.html">Clubs</a></li>
+      <li><a href="campus.html">Campus Life</a></li>
+      <li><a href="survival.html" class="active">Survival Kit</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <section class="hero" style="min-height:70vh;">
+    <div class="hero-bg">
+      <img src="assets/6_Instructions_and_Travelling_Guidelines.png" alt="Students">
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge"><i class="fas fa-shield-alt"></i> Senior Wisdom</div>
+      <h1 class="hero-title" style="font-size:4rem;">Survival <span>Kit</span></h1>
+      <p class="hero-subtitle">The do's, don'ts, and life lessons from seniors who've been there, done that. Learn from their mistakes so you don't repeat them.</p>
+    </div>
+  </section>
+
+  <!-- Do's and Don'ts -->
+  <section class="section">
+    <h2 class="section-title reveal">Do's & Don'ts Every Fresher Must Know</h2>
+    <p class="section-subtitle reveal">Print this and stick it on your wall. Seriously.</p>
+    <div class="dos-donts-grid">
+      <div class="dos-card reveal">
+        <h3><i class="fas fa-check-circle"></i> DO's</h3>
+        <ul>
+          <li>Attend every class — attendance is everything</li>
+          <li>Carry your ID card at all times</li>
+          <li>Introduce yourself to professors</li>
+          <li>Join at least 2 clubs in your first month</li>
+          <li>Make friends from different branches</li>
+          <li>Start preparing for placements from Year 1</li>
+          <li>Use the library — it's a goldmine</li>
+          <li>Participate in at least one hackathon per year</li>
+          <li>Keep your room and study area organized</li>
+          <li>Call your parents regularly — they miss you</li>
+          <li>Eat healthy and exercise regularly</li>
+          <li>Ask for help when you need it</li>
+          <li>Back up your project files on cloud storage</li>
+          <li>Network with seniors and alumni</li>
+          <li>Explore Amaravati city on weekends</li>
+        </ul>
+      </div>
+      <div class="donts-card reveal">
+        <h3><i class="fas fa-times-circle"></i> DON'Ts</h3>
+        <ul>
+          <li>Don't skip classes for sleep — you'll regret it</li>
+          <li>Don't copy assignments — plagiarism is serious</li>
+          <li>Don't stay in your room all day</li>
+          <li>Don't ignore mental health struggles</li>
+          <li>Don't spend all your money on food delivery</li>
+          <li>Don't get into unnecessary arguments</li>
+          <li>Don't procrastinate on projects till last minute</li>
+          <li>Don't compare yourself to others</li>
+          <li>Don't trust everyone blindly</li>
+          <li>Don't use phones during lab sessions</li>
+          <li>Don't miss club intro sessions — they're important</li>
+          <li>Don't neglect your health for grades</li>
+          <li>Don't break hostel rules — wardens are strict</li>
+          <li>Don't spread rumors or gossip</li>
+          <li>Don't forget to enjoy college life!</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Common Mistakes -->
+  <section class="section">
+    <h2 class="section-title reveal">Common Mistakes Seniors Made</h2>
+    <p class="section-subtitle reveal">Real stories from real seniors. Don't be that person.</p>
+    <div class="grid-2">
+      <div class="card reveal" style="border-left:4px solid #e53935;">
+        <h3 style="color:#e53935;margin-bottom:1rem;"><i class="fas fa-exclamation-triangle"></i> "I Ignored Attendance"</h3>
+        <p style="color:var(--gray);line-height:1.8;">"I thought I could manage with 70% attendance. I was wrong. I got detained in 3 subjects and had to repeat an entire semester. It delayed my graduation and cost me a placement opportunity." <br><br><strong style="color:#fff;">— Senior, CSE 2024 Batch</strong></p>
+      </div>
+      <div class="card reveal" style="border-left:4px solid #e53935;">
+        <h3 style="color:#e53935;margin-bottom:1rem;"><i class="fas fa-exclamation-triangle"></i> "I Didn't Join Any Clubs"</h3>
+        <p style="color:var(--gray);line-height:1.8;">"I focused only on academics and ignored clubs. During placements, my resume looked empty. Companies want well-rounded candidates. I had to scramble in my final year to add activities." <br><br><strong style="color:#fff;">— Senior, ECE 2023 Batch</strong></p>
+      </div>
+      <div class="card reveal" style="border-left:4px solid #e53935;">
+        <h3 style="color:#e53935;margin-bottom:1rem;"><i class="fas fa-exclamation-triangle"></i> "I Procrastinated on Coding"</h3>
+        <p style="color:var(--gray);line-height:1.8;">"I thought I'd learn coding 'later.' Later became never. When placement season arrived, I couldn't solve basic DSA questions. I had to take a gap year to prepare." <br><br><strong style="color:#fff;">— Senior, CSE 2022 Batch</strong></p>
+      </div>
+      <div class="card reveal" style="border-left:4px solid #e53935;">
+        <h3 style="color:#e53935;margin-bottom:1rem;"><i class="fas fa-exclamation-triangle"></i> "I Didn't Ask for Help"</h3>
+        <p style="color:var(--gray);line-height:1.8;">"I was too proud to ask for help. I struggled alone with mental health issues and poor grades. When I finally spoke to a counselor, things got better. Don't wait till it's too late." <br><br><strong style="color:#fff;">— Senior, Mechanical 2024 Batch</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Time Management -->
+  <section class="section">
+    <h2 class="section-title reveal">Time Management: Studies vs Activities</h2>
+    <p class="section-subtitle reveal">The ultimate balancing act. Here's how to nail it.</p>
+    <div class="grid-3">
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#c62828,#ff7043);"><i class="fas fa-calendar-alt"></i></div>
+        <h3>The 60-30-10 Rule</h3>
+        <p><strong>60%</strong> of your time on academics (classes, assignments, self-study). <strong>30%</strong> on extracurriculars (clubs, sports, events). <strong>10%</strong> on relaxation and socializing. This ratio keeps you balanced and productive.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#1a237e,#5c6bc0);"><i class="fas fa-clock"></i></div>
+        <h3>Use a Planner</h3>
+        <p>Whether it's a physical planner or Google Calendar, plan your week every Sunday. Block time for classes, study sessions, club meetings, and personal time. Stick to the plan!</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#2e7d32,#66bb6a);"><i class="fas fa-pomodoro"></i></div>
+        <h3>Pomodoro Technique</h3>
+        <p>Study for 25 minutes, take a 5-minute break. After 4 cycles, take a 15-minute break. This keeps your brain fresh and prevents burnout. Perfect for long study sessions.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#f57c00,#ffb74d);"><i class="fas fa-priority-high"></i></div>
+        <h3>Prioritize Ruthlessly</h3>
+        <p>Not everything is urgent. Use the Eisenhower Matrix: Urgent & Important (do first), Important but Not Urgent (schedule), Urgent but Not Important (delegate), Neither (eliminate).</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#6a1b9a,#ce93d8);"><i class="fas fa-moon"></i></div>
+        <h3>Sleep is Non-Negotiable</h3>
+        <p>Pulling all-nighters seems cool but destroys your productivity. Aim for 7-8 hours of sleep. A well-rested brain learns faster and retains information better.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#00838f,#4dd0e1);"><i class="fas fa-ban"></i></div>
+        <h3>Limit Social Media</h3>
+        <p>Social media is the biggest time thief. Use apps like Forest or StayFocusd to limit screen time. Your future self will thank you for every hour saved.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mental Health -->
+  <section class="section">
+    <h2 class="section-title reveal">Mental Health & Stress Management</h2>
+    <p class="section-subtitle reveal">Your mental health is just as important as your grades. Take care of yourself.</p>
+    <div class="grid-3">
+      <div class="mental-card reveal">
+        <div class="mental-icon"><i class="fas fa-heart"></i></div>
+        <h3>Talk to Someone</h3>
+        <p>Feeling overwhelmed? Talk to a friend, senior, counselor, or professor. Amrita has counseling services. Bottling up emotions makes things worse. You're not alone.</p>
+      </div>
+      <div class="mental-card reveal">
+        <div class="mental-icon" style="background:linear-gradient(135deg,#2e7d32,#66bb6a);"><i class="fas fa-running"></i></div>
+        <h3>Exercise Regularly</h3>
+        <p>Physical activity is the best stress buster. Use the sports complex, go for morning runs, or join the gym. Even 30 minutes of walking helps clear your mind.</p>
+      </div>
+      <div class="mental-card reveal">
+        <div class="mental-icon" style="background:linear-gradient(135deg,#f57c00,#ffb74d);"><i class="fas fa-music"></i></div>
+        <h3>Find Your Outlet</h3>
+        <p>Music, art, writing, gaming, or whatever makes you happy. Dedicate time to hobbies. College life is stressful — you need healthy outlets.</p>
+      </div>
+      <div class="mental-card reveal">
+        <div class="mental-icon" style="background:linear-gradient(135deg,#6a1b9a,#ce93d8);"><i class="fas fa-bed"></i></div>
+        <h3>Sleep Well</h3>
+        <p>Sleep deprivation leads to anxiety, poor concentration, and health issues. Maintain a sleep schedule. Your brain needs rest to function at its best.</p>
+      </div>
+      <div class="mental-card reveal">
+        <div class="mental-icon" style="background:linear-gradient(135deg,#00838f,#4dd0e1);"><i class="fas fa-om"></i></div>
+        <h3>Meditate & Breathe</h3>
+        <p>Even 5 minutes of meditation daily can reduce stress significantly. Use apps like Headspace or Calm. Deep breathing exercises work wonders before exams.</p>
+      </div>
+      <div class="mental-card reveal">
+        <div class="mental-icon" style="background:linear-gradient(135deg,#c62828,#e53935);"><i class="fas fa-phone"></i></div>
+        <h3>Stay Connected</h3>
+        <p>Call your family regularly. Talk to old friends. Homesickness is real and normal. Staying connected to your support system keeps you grounded.</p>
+      </div>
+    </div>
+    <div class="card reveal" style="margin-top:2rem;text-align:center;">
+      <h3 style="color:#ffd700;margin-bottom:1rem;"><i class="fas fa-hands-helping"></i> Emergency Help</h3>
+      <p style="color:var(--gray);max-width:700px;margin:0 auto;line-height:1.8;">If you're experiencing severe stress, anxiety, or depression, reach out immediately. Talk to the college counselor, your warden, or a trusted professor. There is NO shame in asking for help. Your well-being comes first, always.</p>
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <section class="section" style="text-align:center;">
+    <p class="section-subtitle" style="margin:0 auto 2rem;">Let's get you the tools you need to succeed.</p>
+    <a href="resources.html" class="btn btn-gold">
+      <i class="fas fa-tools"></i> Explore Tools & Resources
+    </a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">Campus <span>Compass</span></div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="clubs.html">Clubs</a></li>
+        <li><a href="campus.html">Campus</a></li>
+        <li><a href="survival.html">Survival</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">Built with <span style="color:#e53935;">❤</span> for Amrita Vishwa Vidyapeetham, Amaravati | Batch of 2026</div>
+  </footer>
+
+  <button class="theme-toggle"><i class="fas fa-sun"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>

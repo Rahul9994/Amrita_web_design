@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tools & Resources | Campus Compass - Amrita Amaravati</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="loader">
+    <div class="loader-text">Tools & <span>Resources</span></div>
+    <div class="loader-bar"><div class="loader-bar-inner"></div></div>
+  </div>
+  <div class="progress-bar"></div>
+  <div class="bg-animation">
+    <div class="orb"></div><div class="orb"></div><div class="orb"></div>
+  </div>
+  <canvas id="particle-canvas"></canvas>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">CC</div>
+      <div class="logo-text">Campus <span>Compass</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="clubs.html">Clubs</a></li>
+      <li><a href="campus.html">Campus Life</a></li>
+      <li><a href="survival.html">Survival Kit</a></li>
+      <li><a href="resources.html" class="active">Resources</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <section class="hero" style="min-height:70vh;">
+    <div class="hero-bg">
+      <img src="assets/4_Campus_Life_Amrita_Vishwa_Vidyapeetha.png" alt="Students">
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge"><i class="fas fa-tools"></i> Your Digital Arsenal</div>
+      <h1 class="hero-title" style="font-size:4rem;">Tools & <span>Resources</span></h1>
+      <p class="hero-subtitle">The essential apps, websites, and platforms every Amrita student needs. Bookmark these and thank us later!</p>
+    </div>
+  </section>
+
+  <!-- Essential Apps -->
+  <section class="section">
+    <h2 class="section-title reveal">Essential Apps Every CSE Student Should Install</h2>
+    <p class="section-subtitle reveal">These apps will make your college life 10x easier.</p>
+    <div class="grid-2">
+      <a href="https://code.visualstudio.com/" target="_blank" class="resource-card reveal">
+        <div class="resource-icon" style="background:linear-gradient(135deg,#007acc,#1e90ff);"><i class="fas fa-code"></i></div>
+        <div class="resource-info">
+          <h4>VS Code</h4>
+          <p>The best code editor. Install extensions for Python, C++, Java, and more. Free and lightweight.</p>
+        </div>
+      </a>
+      <a href="https://git-scm.com/" target="_blank" class="resource-card reveal">
+        <div class="resource-icon" style="background:linear-gradient(135deg,#f05032,#ff7043);"><i class="fab fa-git-alt"></i></div>
+        <div class="resource-info">
+          <h4>Git & GitHub</h4>
+          <p>Version control is non-negotiable. Learn Git early. Host your projects on GitHub to build your portfolio.</p>
+        </div>
+      </a>
+      <a href="https://www.postman.com/" target="_blank" class="resource-card reveal">
+        <div class="resource-icon" style="background:linear-gradient(135deg,#ff6c37,#ff8a65);"><i class="fas fa-paper-plane"></i></div>
+        <div class="resource-info">
+          <h4>Postman</h4>
+          <p>Test APIs like a pro. Essential for web development and backend projects. Free tier is more than enough.</p>
+        </div>
+      </a>
+      <a href="https://www.figma.com/" target="_blank" class="resource-card reveal">
+        <div class="resource-icon" style="background:linear-gradient(135deg,#a259ff,#ce93d8);"><i class="fab fa-figma"></i></div>
+        <div class="resource-info">
+          <h4>Figma</h4>
+          <p>Design UI/UX for your projects. Free for students. Collaborative and easy to learn. Great for hackathons!</p>
+        </div>
+      </a>
+      <a href="https://www.notion.so/" target="_blank" class="resource-card reveal">
+        <div class="resource-icon" style="background:linear-gradient(135deg,#000,#424242);"><i class="fas fa-sticky-note"></i></div>
+        <div class="resource-info">
+          <h4>Notion</h4>
+          <p>The ultimate note-taking and productivity app. Organize notes, tasks, projects, and schedules in one place.</p>
+        </div>
+      </a>
+      <a href="https://discord.com/" target="_blank" class="resource-card reveal">
+        <div class="resource-icon" style="background:linear-gradient(135deg,#5865f2,#7986cb);"><i class="fab fa-discord"></i></div>
+        <div class="resource-info">
+          <h4>Discord</h4>
+          <p>Join coding communities, hackathon servers, and study groups. Most clubs have their own Discord servers too.</p>
+        </div>
+      </a>
+      <a href="https://www.jetbrains.com/idea/" target="_blank" class="resource-card reveal">
+        <div class="resource-icon" style="background:linear-gradient(135deg,#000,#ff6f00);"><i class="fas fa-coffee"></i></div>
+        <div class="resource-info">
+          <h4>IntelliJ IDEA</h4>
+          <p>The best IDE for Java development. Free for students with .edu email. Powerful features for large projects.</p>
+        </div>
+      </a>
+      <a href="https://www.android.com/" target="_blank" class="resource-card reveal">
+        <div class="resource-icon" style="background:linear-gradient(135deg,#3ddc84,#66bb6a);"><i class="fab fa-android"></i></div>
+        <div class="resource-info">
+          <h4>Android Studio</h4>
+          <p>Build Android apps. Essential for mobile development enthusiasts. Free and officially supported by Google.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Learning Platforms -->
+  <section class="section">
+    <h2 class="section-title reveal">Websites & Platforms for Learning</h2>
+    <p class="section-subtitle reveal">Level up your skills with these free learning resources.</p>
+    <div class="grid-2">
+      <a href="https://nptel.ac.in/" target="_blank" class="resource-card reveal">
+        <div class="resource-icon" style="background:linear-gradient(135deg,#1a237e,#5c6bc0);"><i class="fas fa-graduation-cap"></i></div>
+        <div class="resource-info">
+          <h4>NPTEL</h4>
+          <p>Free online courses from IIT professors. Amrita has tie-ups with NPTEL. Earn certificates that add value to your resume.</p>
+        </div>
+      </a>
+      <a href="https://www.geeksforgeeks.org/" target="_blank" class="resource-card reveal">
+        <div class="resource-icon" style="background:linear-gradient(135deg,#2e7d32,#66bb6a);"><i class="fas fa-book"></i></div>
+        <div class="resource-info">
+          <h4>GeeksforGeeks</h4>
+          <p>The bible for CS students. Tutorials on DSA, programming languages, system design, and interview prep. Free and comprehensive.</p>
+        </div>
+      </a>
+      <a href="https://leetcode.com/" target="_blank" class="resource-card reveal">
+        <div class="resource-icon" style="background:linear-gradient(135deg,#f57c00,#ffb74d);"><i class="fas fa-code"></i></div>
+        <div class="resource-info">
+          <h4>LeetCode</h4>
+          <p>The #1 platform for coding interview prep. Solve problems daily. Start with Easy, move to Medium, then Hard. Consistency is key!</p>
+        </div>
+      </a>
+      <a href="https://www.hackerrank.com/" target="_blank" class="resource-card reveal">
+        <div class="resource-icon" style="background:linear-gradient(135deg,#1ba94c,#66bb6a);"><i class="fab fa-hackerrank"></i></div>
+        <div class="resource-info">
+          <h4>HackerRank</h4>
+          <p>Practice coding in multiple languages. Great for beginners. Earn badges and certificates. Also has skill certification tests.</p>
+        </div>
+      </a>
+      <a href="https://www.freecodecamp.org/" target="_blank" class="resource-card reveal">
+        <div class="resource-icon" style="background:linear-gradient(135deg,#0a0a23,#1a1a3e);"><i class="fab fa-free-code-camp"></i></div>
+        <div class="resource-info">
+          <h4>freeCodeCamp</h4>
+          <p>Completely free coding curriculum. Web development, data science, machine learning. Build projects and earn certifications.</p>
+        </div>
+      </a>
+      <a href="https://www.coursera.org/" target="_blank" class="resource-card reveal">
+        <div class="resource-icon" style="background:linear-gradient(135deg,#0056d2,#42a5f5);"><i class="fas fa-university"></i></div>
+        <div class="resource-info">
+          <h4>Coursera</h4>
+          <p>Courses from top universities. Audit for free or apply for financial aid. Great for specialized topics like AI, cloud, and cybersecurity.</p>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/" target="_blank" class="resource-card reveal">
+        <div class="resource-icon" style="background:linear-gradient(135deg,#ff0000,#ff5252);"><i class="fab fa-youtube"></i></div>
+        <div class="resource-info">
+          <h4>YouTube</h4>
+          <p>Channels like Traversy Media, The Net Ninja, freeCodeCamp, and CS50 offer amazing free tutorials. Search and learn!</p>
+        </div>
+      </a>
+      <a href="https://stackoverflow.com/" target="_blank" class="resource-card reveal">
+        <div class="resource-icon" style="background:linear-gradient(135deg,#f48024,#ffab40);"><i class="fab fa-stack-overflow"></i></div>
+        <div class="resource-info">
+          <h4>Stack Overflow</h4>
+          <p>Stuck on a bug? Stack Overflow has the answer. Learn to search effectively and read documentation. Your debugging skills will skyrocket.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- College Portals -->
+  <section class="section">
+    <h2 class="section-title reveal">Important College Portals</h2>
+    <p class="section-subtitle reveal">These portals are essential for your daily college life. Bookmark them NOW.</p>
+    <div class="grid-2">
+      <div class="card reveal">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1rem;">
+          <div style="width:50px;height:50px;border-radius:14px;background:linear-gradient(135deg,#c62828,#e53935);display:flex;align-items:center;justify-content:center;font-size:1.3rem;"><i class="fas fa-laptop"></i></div>
+          <h3 style="margin:0;">ERP Portal</h3>
+        </div>
+        <p style="color:var(--gray);line-height:1.8;margin-bottom:1rem;">The central hub for all academic activities. Check your timetable, attendance, marks, fee status, and exam schedules here.</p>
+        <span class="tag tag-red"><i class="fas fa-external-link-alt"></i> Access via college intranet</span>
+      </div>
+      <div class="card reveal">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1rem;">
+          <div style="width:50px;height:50px;border-radius:14px;background:linear-gradient(135deg,#1a237e,#5c6bc0);display:flex;align-items:center;justify-content:center;font-size:1.3rem;"><i class="fas fa-calendar-check"></i></div>
+          <h3 style="margin:0;">Attendance Tracker</h3>
+        </div>
+        <p style="color:var(--gray);line-height:1.8;margin-bottom:1rem;">Track your attendance percentage subject-wise. Check regularly to ensure you're above 75%. Don't wait till it's too late!</p>
+        <span class="tag tag-blue"><i class="fas fa-external-link-alt"></i> Available on ERP</span>
+      </div>
+      <div class="card reveal">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1rem;">
+          <div style="width:50px;height:50px;border-radius:14px;background:linear-gradient(135deg,#2e7d32,#66bb6a);display:flex;align-items:center;justify-content:center;font-size:1.3rem;"><i class="fas fa-book"></i></div>
+          <h3 style="margin:0;">Digital Library</h3>
+        </div>
+        <p style="color:var(--gray);line-height:1.8;margin-bottom:1rem;">Access e-books, research papers, journals, and digital resources. Great for project research and assignment references.</p>
+        <span class="tag"><i class="fas fa-external-link-alt"></i> Library portal</span>
+      </div>
+      <div class="card reveal">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1rem;">
+          <div style="width:50px;height:50px;border-radius:14px;background:linear-gradient(135deg,#f57c00,#ffb74d);display:flex;align-items:center;justify-content:center;font-size:1.3rem;"><i class="fas fa-briefcase"></i></div>
+          <h3 style="margin:0;">Placement Portal</h3>
+        </div>
+        <p style="color:var(--gray);line-height:1.8;margin-bottom:1rem;">Register for placement drives, view job openings, upload your resume, and track your application status. Activate from Year 3.</p>
+        <span class="tag tag-red"><i class="fas fa-external-link-alt"></i> Placement cell</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Productivity Tools -->
+  <section class="section">
+    <h2 class="section-title reveal">Free Tools for Projects, Notes & Productivity</h2>
+    <p class="section-subtitle reveal">Work smarter, not harder.</p>
+    <div class="grid-3">
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#4285f4,#34a853);"><i class="fab fa-google-drive"></i></div>
+        <h3>Google Drive</h3>
+        <p>15GB free cloud storage. Store all your notes, projects, and assignments. Access from anywhere. Share files with teammates easily.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#00a4ef,#0078d4);"><i class="fab fa-microsoft"></i></div>
+        <h3>Microsoft 365 (Free for Students)</h3>
+        <p>Get Word, Excel, PowerPoint, and OneDrive free with your .edu email. Essential for assignments, presentations, and reports.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#000,#333);"><i class="fab fa-github"></i></div>
+        <h3>GitHub Student Pack</h3>
+        <p>Free GitHub Pro, domain names, cloud credits, and dozens of developer tools. Apply with your college email. A $1000+ value pack!</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#00c4cc,#00d4aa);"><i class="fas fa-palette"></i></div>
+        <h3>Canva</h3>
+        <p>Design posters, presentations, social media posts, and resumes. Free tier is incredibly powerful. No design skills needed!</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#e44332,#ff7043);"><i class="fas fa-file-pdf"></i></div>
+        <h3>SmallPDF / ILovePDF</h3>
+        <p>Merge, split, compress, and convert PDFs for free. Essential for submitting assignments and handling official documents.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#7b68ee,#9575cd);"><i class="fas fa-project-diagram"></i></div>
+        <h3>Trello / Asana</h3>
+        <p>Project management tools for group projects. Create boards, assign tasks, set deadlines, and track progress visually.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Downloadable Guide -->
+  <section class="section" style="text-align:center;">
+    <h2 class="section-title reveal" style="display:inline-block;">Download Your Quick Guide</h2>
+    <p class="section-subtitle reveal" style="margin-left:auto;margin-right:auto;">
+      A one-page summary of everything on this website. Save it on your phone for quick reference!
+    </p>
+    <div class="reveal" style="margin-top:2rem;">
+      <a href="#" class="download-btn" onclick="alert('PDF Guide coming soon! Save this website bookmark for now.');return false;">
+        <i class="fas fa-file-pdf"></i> Download PDF Guide
+      </a>
+    </div>
+    <p style="color:var(--gray);margin-top:1.5rem;font-size:0.9rem;">
+      <i class="fas fa-info-circle" style="color:#ffd700;"></i> The PDF contains a condensed version of all sections for offline access.
+    </p>
+  </section>
+
+  <!-- Navigation -->
+  <section class="section" style="text-align:center;">
+    <p class="section-subtitle" style="margin:0 auto 2rem;">Got questions? We've got answers!</p>
+    <a href="faq.html" class="btn btn-gold">
+      <i class="fas fa-question-circle"></i> Visit FAQ & Quiz
+    </a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">Campus <span>Compass</span></div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="clubs.html">Clubs</a></li>
+        <li><a href="campus.html">Campus</a></li>
+        <li><a href="survival.html">Survival</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">Built with <span style="color:#e53935;">❤</span> for Amrita Vishwa Vidyapeetham, Amaravati | Batch of 2026</div>
+  </footer>
+
+  <button class="theme-toggle"><i class="fas fa-sun"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>

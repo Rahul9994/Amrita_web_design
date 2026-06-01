@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ & Club Finder | Campus Compass - Amrita Amaravati</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="loader">
+    <div class="loader-text">FAQ & <span>Quiz</span></div>
+    <div class="loader-bar"><div class="loader-bar-inner"></div></div>
+  </div>
+  <div class="progress-bar"></div>
+  <div class="bg-animation">
+    <div class="orb"></div><div class="orb"></div><div class="orb"></div>
+  </div>
+  <canvas id="particle-canvas"></canvas>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">CC</div>
+      <div class="logo-text">Campus <span>Compass</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="clubs.html">Clubs</a></li>
+      <li><a href="campus.html">Campus Life</a></li>
+      <li><a href="survival.html">Survival Kit</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="faq.html" class="active">FAQ</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <section class="hero" style="min-height:70vh;">
+    <div class="hero-bg">
+      <img src="assets/8_Life_at_Amrita_Amrita_Vishwa_Vidyapeetha.png" alt="Students">
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge"><i class="fas fa-question-circle"></i> Got Questions?</div>
+      <h1 class="hero-title" style="font-size:4rem;">FAQ & <span>Club Finder</span></h1>
+      <p class="hero-subtitle">The most common questions freshers ask — answered. Plus, take our quiz to find the perfect club for you!</p>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section">
+    <h2 class="section-title reveal">Frequently Asked Questions</h2>
+    <p class="section-subtitle reveal">Real questions from real freshers. If you don't find your answer here, ask a senior!</p>
+
+    <div class="faq-item reveal">
+      <div class="faq-question">
+        <span><i class="fas fa-question-circle" style="color:#ffd700;margin-right:10px;"></i> What should I bring on my first day?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Bring your admission letter, ID proof, passport-size photos (at least 10), original certificates, a laptop, basic toiletries, bedsheets, and comfortable clothes. Don't overpack — you can buy most things in Amaravati. Keep digital copies of all documents on your phone and cloud storage.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <div class="faq-question">
+        <span><i class="fas fa-question-circle" style="color:#ffd700;margin-right:10px;"></i> Is the hostel compulsory for all students?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Hostel is compulsory for first-year students. From second year onwards, you can opt for day scholar status if you live nearby with family. However, most students prefer staying in the hostel even in later years because of the convenience and campus life experience.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <div class="faq-question">
+        <span><i class="fas fa-question-circle" style="color:#ffd700;margin-right:10px;"></i> Can I use my own laptop or do I need to buy a specific one?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>You can use your own laptop. For CSE students, we recommend at least 8GB RAM, SSD storage, and a decent processor (i5/Ryzen 5 or above). A dedicated GPU is helpful for AI/ML work but not mandatory. The college has computer labs for students who don't have laptops.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <div class="faq-question">
+        <span><i class="fas fa-question-circle" style="color:#ffd700;margin-right:10px;"></i> What is the dress code?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Amrita follows a modest dress code. Formal/casual wear is acceptable for classes. Avoid shorts, sleeveless tops, and overly casual attire in academic areas. During lab sessions, wear closed shoes and avoid loose clothing. Traditional wear is always welcome and appreciated!</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <div class="faq-question">
+        <span><i class="fas fa-question-circle" style="color:#ffd700;margin-right:10px;"></i> Can I go home on weekends?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Yes, you can go home on weekends with proper permission from the warden. You need to sign the outing register and return by the specified time (usually Sunday evening). During exam periods, weekend outings may be restricted. Always inform your parents and roommates when you leave.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <div class="faq-question">
+        <span><i class="fas fa-question-circle" style="color:#ffd700;margin-right:10px;"></i> How strict are the hostel rules?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Hostel rules are reasonable but strictly enforced. Key rules: No visitors of opposite gender in rooms, no alcohol/smoking, no loud music after 11 PM, mandatory attendance at night, and no cooking in rooms. Breaking rules can lead to fines or suspension. Respect the rules — they're for everyone's safety and comfort.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <div class="faq-question">
+        <span><i class="fas fa-question-circle" style="color:#ffd700;margin-right:10px;"></i> Is there WiFi in the hostel?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Yes! High-speed WiFi is available in all hostel blocks and academic areas. The password is provided on your ID card or during orientation. Speed is sufficient for streaming, video calls, and online learning. However, during peak hours (evening), the speed may reduce slightly due to heavy usage.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <div class="faq-question">
+        <span><i class="fas fa-question-circle" style="color:#ffd700;margin-right:10px;"></i> Can I change my branch after joining?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Branch change is possible after the first year based on your CGPA and availability of seats. You need to be among the top performers in your current branch. The process happens at the beginning of the second year. Focus on getting a high CGPA in Year 1 if you want to switch branches.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <div class="faq-question">
+        <span><i class="fas fa-question-circle" style="color:#ffd700;margin-right:10px;"></i> What about placements? When do they start?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Placement drives typically start from the 7th semester (pre-final year). However, internship opportunities begin from the 5th-6th semester. Companies like TCS, Infosys, Wipro, Amazon, Microsoft, and many startups visit campus. Maintain a CGPA above 7.5 and build a strong skill set to maximize your chances.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <div class="faq-question">
+        <span><i class="fas fa-question-circle" style="color:#ffd700;margin-right:10px;"></i> Are there any scholarships available?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Yes! Amrita offers merit-based scholarships for top performers. There are also scholarships for economically backward students, sports achievers, and cultural talents. Check with the admissions office or scholarship cell for detailed criteria and application procedures. Apply early!</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <div class="faq-question">
+        <span><i class="fas fa-question-circle" style="color:#ffd700;margin-right:10px;"></i> How do I manage if I get sick?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>The campus has a health center with a qualified doctor and nurse. For minor issues, visit the health center. For emergencies, the college provides ambulance service to nearby hospitals. Inform your warden and parents immediately. Keep a basic first-aid kit in your room.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <div class="faq-question">
+        <span><i class="fas fa-question-circle" style="color:#ffd700;margin-right:10px;"></i> Can I start my own club?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Absolutely! If you have a unique idea and can gather at least 15 interested students, you can propose a new club. Submit a proposal to the Student Affairs office with your club's vision, activities plan, and faculty advisor details. Approval usually takes 2-4 weeks.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Club Finder Quiz -->
+  <section class="section" style="background:rgba(198,40,40,0.05);border-radius:30px;margin:0 5%;">
+    <h2 class="section-title reveal"><i class="fas fa-magic" style="color:#ffd700;"></i> Club Finder Quiz</h2>
+    <p class="section-subtitle reveal">Not sure which club to join? Answer 4 simple questions and we'll tell you the perfect match!</p>
+
+    <div class="quiz-container reveal">
+      <!-- Start Screen -->
+      <div class="quiz-start" style="text-align:center;padding:3rem 2rem;">
+        <div style="width:100px;height:100px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--accent));display:flex;align-items:center;justify-content:center;font-size:3rem;margin:0 auto 2rem;">
+          <i class="fas fa-magic" style="color:white;"></i>
+        </div>
+        <h3 style="font-size:1.8rem;margin-bottom:1rem;color:var(--light);">Find Your Perfect Club</h3>
+        <p style="color:var(--gray);margin-bottom:2rem;max-width:500px;margin-left:auto;margin-right:auto;">Answer 4 quick questions about your interests and personality. We'll recommend the best club for you at Amrita Amaravati!</p>
+        <button class="btn btn-gold" onclick="startQuiz()" style="cursor:none;">
+          <i class="fas fa-play"></i> Start Quiz
+        </button>
+      </div>
+
+      <!-- Questions -->
+      <div class="quiz-questions" style="display:none;">
+        <div class="quiz-progress">
+          <div class="quiz-progress-bar"></div>
+        </div>
+
+        <div class="quiz-question active">
+          <h3>Question 1: What excites you the most?</h3>
+          <div class="quiz-options">
+            <div class="quiz-option" onclick="selectOption('tech')">Building apps and solving coding challenges</div>
+            <div class="quiz-option" onclick="selectOption('creative')">Designing posters, videos, and creative content</div>
+            <div class="quiz-option" onclick="selectOption('management')">Organizing events and managing people</div>
+            <div class="quiz-option" onclick="selectOption('robotics')">Robots, drones, and hardware projects</div>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <h3>Question 2: How do you prefer to spend your weekends?</h3>
+          <div class="quiz-options">
+            <div class="quiz-option" onclick="selectOption('tech')">Hackathons and coding competitions</div>
+            <div class="quiz-option" onclick="selectOption('creative')">Photography, art, or content creation</div>
+            <div class="quiz-option" onclick="selectOption('management')">Planning and hosting college events</div>
+            <div class="quiz-option" onclick="selectOption('robotics')">Working on electronics and circuits</div>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <h3>Question 3: What's your dream project?</h3>
+          <div class="quiz-options">
+            <div class="quiz-option" onclick="selectOption('tech')">A full-stack web application</div>
+            <div class="quiz-option" onclick="selectOption('creative')">A viral social media campaign</div>
+            <div class="quiz-option" onclick="selectOption('management')">A grand college fest with 1000+ attendees</div>
+            <div class="quiz-option" onclick="selectOption('robotics')">An autonomous robot or drone</div>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <h3>Question 4: Which skill do you want to develop?</h3>
+          <div class="quiz-options">
+            <div class="quiz-option" onclick="selectOption('tech')">AI, ML, and Data Science</div>
+            <div class="quiz-option" onclick="selectOption('creative')">UI/UX and Graphic Design</div>
+            <div class="quiz-option" onclick="selectOption('management')">Leadership and Public Speaking</div>
+            <div class="quiz-option" onclick="selectOption('robotics')">Embedded Systems and IoT</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Result -->
+      <div class="quiz-result">
+        <div style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--primary-light));display:flex;align-items:center;justify-content:center;font-size:2.5rem;margin:0 auto 1.5rem;">
+          <i class="fas fa-trophy" style="color:white;"></i>
+        </div>
+        <h2>Your Perfect Match!</h2>
+        <h3 class="result-club" style="font-size:1.8rem;color:var(--gold);margin:1rem 0;"></h3>
+        <p class="result-desc" style="color:var(--gray);max-width:500px;margin:0 auto 2rem;line-height:1.8;"></p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+          <a href="clubs.html" class="btn btn-primary"><i class="fas fa-users"></i> Explore All Clubs</a>
+          <button class="btn btn-outline" onclick="restartQuiz()" style="cursor:none;"><i class="fas fa-redo"></i> Retake Quiz</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to Home -->
+  <section class="section" style="text-align:center;">
+    <p class="section-subtitle" style="margin:0 auto 2rem;">That's everything! Ready to start your journey?</p>
+    <a href="index.html" class="btn btn-gold">
+      <i class="fas fa-home"></i> Back to Home
+    </a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">Campus <span>Compass</span></div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="clubs.html">Clubs</a></li>
+        <li><a href="campus.html">Campus</a></li>
+        <li><a href="survival.html">Survival</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">Built with <span style="color:#e53935;">❤</span> for Amrita Vishwa Vidyapeetham, Amaravati | Batch of 2026</div>
+  </footer>
+
+  <button class="theme-toggle"><i class="fas fa-sun"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>

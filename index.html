@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Compass | Amrita Vishwa Vidyapeetham, Amaravati</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loader">
+    <div class="loader-text">WELCOME<span> TO AMRITA UNIVERSITY</span></div>
+    <div class="loader-bar"><div class="loader-bar-inner"></div></div>
+  </div>
+
+  <!-- Progress Bar -->
+  <div class="progress-bar"></div>
+
+  <!-- Animated Background -->
+  <div class="bg-animation">
+    <div class="orb"></div>
+    <div class="orb"></div>
+    <div class="orb"></div>
+  </div>
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">CC</div>
+      <div class="logo-text">Amrita <span>University</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="clubs.html">Clubs</a></li>
+      <li><a href="campus.html">Campus Life</a></li>
+      <li><a href="survival.html">Survival Kit</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="assets/campus-main.jpg" alt="Amrita Amaravati Campus">
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-graduation-cap"></i>
+        Welcome to Amrita Vishwa Vidyapeetham, Amaravati
+      </div>
+      <h1 class="hero-title glitch" data-text="Your Journey
+Starts Here">
+        Your Journey<br><span>Starts Here</span>
+      </h1>
+      <p class="hero-subtitle">
+        The ultimate survival guide for freshers joining in July 2026. Everything you need to know — from academics to hostel life, clubs to career tips — all in one place.
+      </p>
+      <div class="hero-buttons">
+        <a href="academics.html" class="btn btn-primary">
+          <i class="fas fa-book-open"></i> Explore Academics
+        </a>
+        <a href="campus.html" class="btn btn-outline">
+          <i class="fas fa-map-marker-alt"></i> Campus Life
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Quick Stats -->
+  <section class="section" style="padding-top: 60px;">
+    <div class="counter-wrap reveal">
+      <div class="counter-box">
+        <div class="stat-number"><span class="counter" data-target="8" data-suffix="+">0</span></div>
+        <div class="stat-label">B.Tech Branches</div>
+      </div>
+      <div class="counter-box">
+        <div class="stat-number"><span class="counter" data-target="15" data-suffix="+">0</span></div>
+        <div class="stat-label">Student Clubs</div>
+      </div>
+      <div class="counter-box">
+        <div class="stat-number"><span class="counter" data-target="350" data-suffix="+">0</span></div>
+        <div class="stat-label">Chakravyuha Members</div>
+      </div>
+      <div class="counter-box">
+        <div class="stat-number"><span class="counter" data-target="100" data-suffix="%">0</span></div>
+        <div class="stat-label">Placement Rate</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What This Website Covers -->
+  <section class="section">
+    <h2 class="section-title reveal">What's Inside?</h2>
+    <p class="section-subtitle reveal">Your complete guide to navigating college life at Amrita Amaravati. Click any section to dive deeper!</p>
+    <div class="grid-3">
+      <a href="academics.html" class="card reveal" style="text-decoration:none;color:inherit;">
+        <div class="card-icon"><i class="fas fa-book"></i></div>
+        <h3>Academic Life</h3>
+        <p>Branches, attendance rules, CIA + ESE pattern, CGPA tips, and everything about classes and labs.</p>
+        <span class="tag tag-red"><i class="fas fa-arrow-right"></i> Read More</span>
+      </a>
+      <a href="clubs.html" class="card reveal" style="text-decoration:none;color:inherit;">
+        <div class="card-icon" style="background:linear-gradient(135deg,#1a237e,#7c4dff);"><i class="fas fa-users"></i></div>
+        <h3>Clubs & Activities</h3>
+        <p>Discover all major clubs, how to join them, and why clubs matter for your career growth.</p>
+        <span class="tag tag-blue"><i class="fas fa-arrow-right"></i> Read More</span>
+      </a>
+      <a href="campus.html" class="card reveal" style="text-decoration:none;color:inherit;">
+        <div class="card-icon" style="background:linear-gradient(135deg,#2e7d32,#66bb6a);"><i class="fas fa-home"></i></div>
+        <h3>Campus & Hostel</h3>
+        <p>Daily routine, hostel facilities, mess timings, transport, and tips to settle in your first week.</p>
+        <span class="tag"><i class="fas fa-arrow-right"></i> Read More</span>
+      </a>
+      <a href="survival.html" class="card reveal" style="text-decoration:none;color:inherit;">
+        <div class="card-icon" style="background:linear-gradient(135deg,#ff6f00,#ffca28);"><i class="fas fa-shield-alt"></i></div>
+        <h3>Survival Kit</h3>
+        <p>Do's & Don'ts, common mistakes to avoid, time management, and mental health tips.</p>
+        <span class="tag tag-red"><i class="fas fa-arrow-right"></i> Read More</span>
+      </a>
+      <a href="resources.html" class="card reveal" style="text-decoration:none;color:inherit;">
+        <div class="card-icon" style="background:linear-gradient(135deg,#c62828,#ff7043);"><i class="fas fa-tools"></i></div>
+        <h3>Tools & Resources</h3>
+        <p>Essential apps, learning platforms, college portals, and free productivity tools.</p>
+        <span class="tag tag-blue"><i class="fas fa-arrow-right"></i> Read More</span>
+      </a>
+      <a href="faq.html" class="card reveal" style="text-decoration:none;color:inherit;">
+        <div class="card-icon" style="background:linear-gradient(135deg,#6a1b9a,#ce93d8);"><i class="fas fa-question-circle"></i></div>
+        <h3>FAQ & Quiz</h3>
+        <p>Most asked questions answered, plus a fun Club Finder Quiz to find your perfect match!</p>
+        <span class="tag"><i class="fas fa-arrow-right"></i> Read More</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section class="section">
+    <h2 class="section-title reveal">Campus Gallery</h2>
+    <p class="section-subtitle reveal">A glimpse into life at Amrita Vishwa Vidyapeetham, Amaravati</p>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item">
+        <img src="assets/1_Top_Deemed_University_in_Amaravati.png" alt="Campus Main Building">
+        <div class="overlay">
+          <h4>Main Campus</h4>
+          <p>The iconic Amrita Amaravati campus</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/3_Amrita_School_of_Business_Amaravati.png" alt="Aerial View">
+        <div class="overlay">
+          <h4>Aerial View</h4>
+          <p>Bird's eye view of the campus</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/2_Labs_Amrita_Vishwa_Vidyapeetham.png" alt="Labs">
+        <div class="overlay">
+          <h4>State-of-the-Art Labs</h4>
+          <p>Practical learning environment</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/7_Campus_Life_Amrita_Vishwa_Vidyapeetha.png" alt="Student Life">
+        <div class="overlay">
+          <h4>Student Life</h4>
+          <p>Friends, fun, and learning together</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/3_Campus_Life_Amrita_Vishwa_Vidyapeetha.png" alt="Campus Walk">
+        <div class="overlay">
+          <h4>Campus Walk</h4>
+          <p>Walking through the beautiful campus</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/8_Life_at_Amrita_Amrita_Vishwa_Vidyapeetha.png" alt="Discussions">
+        <div class="overlay">
+          <h4>Discussions</h4>
+          <p>Collaborative learning at its best</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- First Month Timeline -->
+  <section class="section">
+    <h2 class="section-title reveal">Your First Month Timeline</h2>
+    <p class="section-subtitle reveal">What to expect week by week during your first month at Amrita</p>
+    <div class="timeline reveal">
+      <div class="timeline-item">
+        <h4>Week 1: Orientation & Settling In</h4>
+        <p>Attend orientation sessions, get your ID card, explore the campus, meet your hostel mates, and attend the welcome ceremony. Don't miss the Chakravyuha intro session!</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Week 2: Classes Begin</h4>
+        <p>Your regular classes start. Get familiar with your timetable, locate all your classrooms, and understand the lab schedules. Join at least one club's intro meeting.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Week 3: First Assessments</h4>
+        <p>Small quizzes and assignments begin. Start building good study habits. Attend your first club workshop or event. Make friends in your branch!</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Week 4: Finding Your Rhythm</h4>
+        <p>By now, you should have a routine. Balance studies with extracurriculars. Participate in your first college event. Set your CGPA goals for the semester.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Tips Ticker -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <div class="ticker-item"><i class="fas fa-id-card"></i> Always carry your ID card!</div>
+      <div class="ticker-item"><i class="fas fa-clock"></i> Attendance matters — maintain 75% minimum!</div>
+      <div class="ticker-item"><i class="fas fa-laptop"></i> Carry your laptop to every lab session</div>
+      <div class="ticker-item"><i class="fas fa-users"></i> Join at least 2 clubs in your first month</div>
+      <div class="ticker-item"><i class="fas fa-book"></i> Start studying from Day 1, not before exams</div>
+      <div class="ticker-item"><i class="fas fa-heart"></i> Take care of your mental health</div>
+      <div class="ticker-item"><i class="fas fa-wifi"></i> Campus WiFi password is on your ID card</div>
+      <div class="ticker-item"><i class="fas fa-utensils"></i> Mess timings: 7:30 AM, 12:30 PM, 7:30 PM</div>
+      <!-- Duplicate for seamless loop -->
+      <div class="ticker-item"><i class="fas fa-id-card"></i> Always carry your ID card!</div>
+      <div class="ticker-item"><i class="fas fa-clock"></i> Attendance matters — maintain 75% minimum!</div>
+      <div class="ticker-item"><i class="fas fa-laptop"></i> Carry your laptop to every lab session</div>
+      <div class="ticker-item"><i class="fas fa-users"></i> Join at least 2 clubs in your first month</div>
+      <div class="ticker-item"><i class="fas fa-book"></i> Start studying from Day 1, not before exams</div>
+      <div class="ticker-item"><i class="fas fa-heart"></i> Take care of your mental health</div>
+      <div class="ticker-item"><i class="fas fa-wifi"></i> Campus WiFi password is on your ID card</div>
+      <div class="ticker-item"><i class="fas fa-utensils"></i> Mess timings: 7:30 AM, 12:30 PM, 7:30 PM</div>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <section class="section" style="text-align:center;">
+    <h2 class="section-title reveal" style="display:inline-block;">Ready to Begin?</h2>
+    <p class="section-subtitle reveal" style="margin-left:auto;margin-right:auto;">
+      Your college journey is about to be the most exciting chapter of your life. We've got your back every step of the way!
+    </p>
+    <div class="reveal" style="margin-top:2rem;">
+      <a href="academics.html" class="btn btn-gold" style="margin-right:1rem;">
+        <i class="fas fa-rocket"></i> Start Exploring
+      </a>
+      <a href="resources.html" class="btn btn-outline">
+        <i class="fas fa-download"></i> Download Guide
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">Campus <span>Compass</span></div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="clubs.html">Clubs</a></li>
+        <li><a href="campus.html">Campus</a></li>
+        <li><a href="survival.html">Survival</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      Built with <span style="color:#e53935;">❤</span> for Amrita Vishwa Vidyapeetham, Amaravati | Batch of 2026
+    </div>
+  </footer>
+
+  <!-- Theme Toggle -->
+  <button class="theme-toggle"><i class="fas fa-sun"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>

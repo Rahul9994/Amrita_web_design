@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus & Hostel Life | Campus Compass - Amrita Amaravati</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="loader">
+    <div class="loader-text">Campus & <span>Hostel Life</span></div>
+    <div class="loader-bar"><div class="loader-bar-inner"></div></div>
+  </div>
+  <div class="progress-bar"></div>
+  <div class="bg-animation">
+    <div class="orb"></div><div class="orb"></div><div class="orb"></div>
+  </div>
+  <canvas id="particle-canvas"></canvas>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">CC</div>
+      <div class="logo-text">Campus <span>Compass</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="clubs.html">Clubs</a></li>
+      <li><a href="campus.html" class="active">Campus Life</a></li>
+      <li><a href="survival.html">Survival Kit</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <section class="hero" style="min-height:70vh;">
+    <div class="hero-bg">
+      <img src="assets/3_Campus_Life_Amrita_Vishwa_Vidyapeetha.png" alt="Campus Life">
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge"><i class="fas fa-home"></i> Your Second Home</div>
+      <h1 class="hero-title" style="font-size:4rem;">Campus & <span>Hostel Life</span></h1>
+      <p class="hero-subtitle">From sunrise to sunset — here's what a day at Amrita Amaravati looks like, and everything you need to settle in comfortably.</p>
+    </div>
+  </section>
+
+  <!-- Daily Routine -->
+  <section class="section">
+    <h2 class="section-title reveal">A Typical Day at Amrita Amaravati</h2>
+    <p class="section-subtitle reveal">Your daily routine once classes begin. Get ready for an action-packed day!</p>
+    <div class="timeline reveal">
+      <div class="timeline-item">
+        <h4><i class="fas fa-sun" style="color:#ffd700;"></i> 6:00 AM — Wake Up & Fresh Up</h4>
+        <p>Most students wake up around 6-7 AM. Fresh up, get ready, and head to the mess for breakfast. Pro tip: Early birds get the best breakfast options!</p>
+      </div>
+      <div class="timeline-item">
+        <h4><i class="fas fa-utensils" style="color:#ff7043;"></i> 7:30 AM — Breakfast at Mess</h4>
+        <p>Mess breakfast is served from 7:00 AM to 8:30 AM. Options include idli, dosa, upma, bread, cornflakes, and fruits. Don't skip breakfast — you need the energy!</p>
+      </div>
+      <div class="timeline-item">
+        <h4><i class="fas fa-chalkboard-teacher" style="color:#42a5f5;"></i> 8:30 AM — Classes Begin</h4>
+        <p>First lecture starts at 8:30 AM. Each class is 50 minutes with a 10-minute break between periods. Labs are usually scheduled in the afternoon.</p>
+      </div>
+      <div class="timeline-item">
+        <h4><i class="fas fa-coffee" style="color:#8d6e63;"></i> 10:30 AM — Short Break</h4>
+        <p>A quick 10-minute break between periods. Grab a snack from the canteen or chat with friends. The canteen serves tea, coffee, and quick bites.</p>
+      </div>
+      <div class="timeline-item">
+        <h4><i class="fas fa-utensils" style="color:#66bb6a;"></i> 12:30 PM — Lunch Break</h4>
+        <p>Lunch is served from 12:00 PM to 1:30 PM. The mess serves rice, dal, curry, chapati, and a sweet dish. The menu rotates daily for variety.</p>
+      </div>
+      <div class="timeline-item">
+        <h4><i class="fas fa-flask" style="color:#ab47bc;"></i> 1:30 PM — Afternoon Labs / Classes</h4>
+        <p>Post-lunch sessions include lab practicals, project work, or additional theory classes. Labs typically run for 2-3 hours.</p>
+      </div>
+      <div class="timeline-item">
+        <h4><i class="fas fa-users" style="color:#ffca28;"></i> 4:30 PM — Club Activities / Sports</h4>
+        <p>After classes, head to club meetings, sports practice, library study sessions, or just chill with friends in the common areas.</p>
+      </div>
+      <div class="timeline-item">
+        <h4><i class="fas fa-utensils" style="color:#ef5350;"></i> 7:30 PM — Dinner at Mess</h4>
+        <p>Dinner is served from 7:00 PM to 8:30 PM. Similar to lunch with different menu items. After dinner, it's study time or relaxation.</p>
+      </div>
+      <div class="timeline-item">
+        <h4><i class="fas fa-book" style="color:#5c6bc0;"></i> 8:30 PM — Study / Project Work</h4>
+        <p>Evening study sessions in the hostel study rooms or library. Many students work on assignments, coding projects, or prepare for upcoming tests.</p>
+      </div>
+      <div class="timeline-item">
+        <h4><i class="fas fa-moon" style="color:#90a4ae;"></i> 11:00 PM — Lights Out</h4>
+        <p>Most hostels have a lights-out policy around 11 PM (varies by hostel). Get good sleep — tomorrow is another busy day!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hostel Facilities -->
+  <section class="section">
+    <h2 class="section-title reveal">Hostel Facilities</h2>
+    <p class="section-subtitle reveal">Your home away from home. Here's what you get.</p>
+    <div class="grid-3">
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#1a237e,#5c6bc0);"><i class="fas fa-bed"></i></div>
+        <h3>Rooms</h3>
+        <p>Spacious rooms with 2-3 students per room. Each room has individual beds, study tables, chairs, wardrobes, and fans. Some rooms have attached bathrooms.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#c62828,#e53935);"><i class="fas fa-wifi"></i></div>
+        <h3>WiFi & Internet</h3>
+        <p>High-speed campus WiFi available in hostels and academic blocks. The password is provided on your ID card. Speed is good for streaming, coding, and video calls.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#2e7d32,#66bb6a);"><i class="fas fa-tint"></i></div>
+        <h3>Water & Laundry</h3>
+        <p>24/7 drinking water (RO purified) and hot water for bathing. Laundry facilities available with washing machines. Ironing boards are provided too.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#f57c00,#ffb74d);"><i class="fas fa-shield-alt"></i></div>
+        <h3>Security</h3>
+        <p>24/7 security guards at hostel gates. Biometric entry/exit system. CCTV cameras in common areas. Parents can feel safe about your security.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#6a1b9a,#ce93d8);"><i class="fas fa-book"></i></div>
+        <h3>Study Rooms</h3>
+        <p>Dedicated study rooms in each hostel block for group studies and quiet reading. Open till late night. Perfect for exam preparation.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#00838f,#4dd0e1);"><i class="fas fa-first-aid"></i></div>
+        <h3>Medical Facilities</h3>
+        <p>On-campus health center with a doctor and nurse. First-aid kits in hostels. Ambulance available 24/7 for emergencies.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Food & Mess -->
+  <section class="section">
+    <h2 class="section-title reveal">Food Options & Mess Timings</h2>
+    <p class="section-subtitle reveal">Good food = Good mood. Here's the mess schedule and what to expect.</p>
+    <div class="grid-2">
+      <div class="card reveal">
+        <h3 style="margin-bottom:1.5rem;"><i class="fas fa-clock" style="color:#ffd700;"></i> Mess Timings</h3>
+        <div style="display:flex;flex-direction:column;gap:1rem;">
+          <div style="display:flex;justify-content:space-between;padding:1rem;background:rgba(255,255,255,0.03);border-radius:12px;">
+            <span style="color:var(--light);font-weight:600;"><i class="fas fa-sun" style="color:#ffd700;margin-right:8px;"></i>Breakfast</span>
+            <span style="color:var(--gray);">7:00 AM — 8:30 AM</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding:1rem;background:rgba(255,255,255,0.03);border-radius:12px;">
+            <span style="color:var(--light);font-weight:600;"><i class="fas fa-sun" style="color:#ff7043;margin-right:8px;"></i>Lunch</span>
+            <span style="color:var(--gray);">12:00 PM — 1:30 PM</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding:1rem;background:rgba(255,255,255,0.03);border-radius:12px;">
+            <span style="color:var(--light);font-weight:600;"><i class="fas fa-coffee" style="color:#8d6e63;margin-right:8px;"></i>Evening Snacks</span>
+            <span style="color:var(--gray);">4:30 PM — 5:30 PM</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding:1rem;background:rgba(255,255,255,0.03);border-radius:12px;">
+            <span style="color:var(--light);font-weight:600;"><i class="fas fa-moon" style="color:#90a4ae;margin-right:8px;"></i>Dinner</span>
+            <span style="color:var(--gray);">7:00 PM — 8:30 PM</span>
+          </div>
+        </div>
+      </div>
+      <div class="card reveal">
+        <h3 style="margin-bottom:1.5rem;"><i class="fas fa-utensils" style="color:#ffd700;"></i> Menu Highlights</h3>
+        <ul style="color:var(--gray);padding-left:1.5rem;line-height:2.2;">
+          <li><strong>Breakfast:</strong> Idli, Dosa, Upma, Poha, Bread, Cornflakes, Fruits, Tea/Coffee</li>
+          <li><strong>Lunch:</strong> Rice, Dal, Sambar, Curry, Chapati, Curd, Pickle, Sweet dish</li>
+          <li><strong>Snacks:</strong> Samosa, Bonda, Biscuits, Tea, Coffee, Juice</li>
+          <li><strong>Dinner:</strong> Similar to lunch with different curries and special items on weekends</li>
+          <li><strong>Special:</strong> Sunday special meals with extra dishes and desserts!</li>
+        </ul>
+        <p style="color:var(--gray);margin-top:1rem;font-size:0.9rem;"><i class="fas fa-info-circle" style="color:#ffd700;"></i> The mess menu rotates weekly. Vegetarian food is standard. Non-veg may be available on specific days.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Campus Layout -->
+  <section class="section">
+    <h2 class="section-title reveal">Campus Layout & Important Places</h2>
+    <p class="section-subtitle reveal">Know your campus like the back of your hand.</p>
+    <div class="grid-3">
+      <div class="info-card reveal">
+        <div class="info-card-icon"><i class="fas fa-university"></i></div>
+        <div class="info-card-body">
+          <h4>Academic Block</h4>
+          <p>Where all your classes happen. Contains lecture halls, seminar rooms, faculty cabins, and department offices. The heart of academics.</p>
+        </div>
+      </div>
+      <div class="info-card reveal">
+        <div class="info-card-icon" style="background:linear-gradient(135deg,#1a237e,#5c6bc0);"><i class="fas fa-flask"></i></div>
+        <div class="info-card-body">
+          <h4>Laboratories</h4>
+          <p>State-of-the-art labs for each department. Computer labs, electronics labs, mechanical workshops, and more. Open for project work after class hours.</p>
+        </div>
+      </div>
+      <div class="info-card reveal">
+        <div class="info-card-icon" style="background:linear-gradient(135deg,#2e7d32,#66bb6a);"><i class="fas fa-book-open"></i></div>
+        <div class="info-card-body">
+          <h4>Library</h4>
+          <p>Well-stocked with textbooks, reference books, journals, and digital resources. Quiet study zones and group discussion rooms available.</p>
+        </div>
+      </div>
+      <div class="info-card reveal">
+        <div class="info-card-icon" style="background:linear-gradient(135deg,#f57c00,#ffb74d);"><i class="fas fa-laptop"></i></div>
+        <div class="info-card-body">
+          <h4>Computer Center</h4>
+          <p>High-config computers with all necessary software installed. Open for students to practice coding, work on projects, and access online resources.</p>
+        </div>
+      </div>
+      <div class="info-card reveal">
+        <div class="info-card-icon" style="background:linear-gradient(135deg,#6a1b9a,#ce93d8);"><i class="fas fa-store"></i></div>
+        <div class="info-card-body">
+          <h4>Canteen & Cafeteria</h4>
+          <p>Multiple canteens serving snacks, beverages, and quick meals. The go-to place between classes for a quick bite or chai break with friends.</p>
+        </div>
+      </div>
+      <div class="info-card reveal">
+        <div class="info-card-icon" style="background:linear-gradient(135deg,#00838f,#4dd0e1);"><i class="fas fa-futbol"></i></div>
+        <div class="info-card-body">
+          <h4>Sports Complex</h4>
+          <p>Cricket ground, football field, basketball court, badminton courts, and indoor games. Hosts all sports events and practice sessions.</p>
+        </div>
+      </div>
+      <div class="info-card reveal">
+        <div class="info-card-icon" style="background:linear-gradient(135deg,#c62828,#e53935);"><i class="fas fa-hospital"></i></div>
+        <div class="info-card-body">
+          <h4>Health Center</h4>
+          <p>On-campus medical facility with a qualified doctor and nurse. Open during college hours. Emergency ambulance available 24/7.</p>
+        </div>
+      </div>
+      <div class="info-card reveal">
+        <div class="info-card-icon" style="background:linear-gradient(135deg,#1a237e,#7c4dff);"><i class="fas fa-bus"></i></div>
+        <div class="info-card-body">
+          <h4>Transport & Parking</h4>
+          <p>College buses for day scholars covering major routes. Ample parking for two-wheelers. Bus schedules are shared at the beginning of each semester.</p>
+        </div>
+      </div>
+      <div class="info-card reveal">
+        <div class="info-card-icon" style="background:linear-gradient(135deg,#2e7d32,#43a047);"><i class="fas fa-landmark"></i></div>
+        <div class="info-card-body">
+          <h4>Amma's Shrine / Prayer Hall</h4>
+          <p>A peaceful space for meditation and prayer. Reflects Amrita's spiritual values. Open for all students regardless of faith.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tips to Settle In -->
+  <section class="section">
+    <h2 class="section-title reveal">Tips to Settle In During Your First Week</h2>
+    <p class="section-subtitle reveal">The first week sets the tone for your entire college life. Make it count!</p>
+    <div class="grid-2">
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#c62828,#ff7043);"><i class="fas fa-map-marked-alt"></i></div>
+        <h3>Explore the Campus</h3>
+        <p>Walk around the entire campus on Day 1. Locate your classrooms, labs, library, canteen, and hostel. Knowing your way around saves time and reduces stress.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#1a237e,#5c6bc0);"><i class="fas fa-user-friends"></i></div>
+        <h3>Meet Your Roommates</h3>
+        <p>Your roommates will be your first friends. Introduce yourself, share your background, and set ground rules for the room. Good roommates = Happy hostel life.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#2e7d32,#66bb6a);"><i class="fas fa-id-card"></i></div>
+        <h3>Get Your ID Card ASAP</h3>
+        <p>Your ID card is your lifeline. You need it for mess, library, labs, and campus entry. Get it made on the first day and always carry it.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#f57c00,#ffb74d);"><i class="fas fa-shopping-cart"></i></div>
+        <h3>Stock Up on Essentials</h3>
+        <p>Buy toiletries, stationery, and snacks from the campus store or nearby shops. Keep a small first-aid kit, umbrella, and power bank handy.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#6a1b9a,#ce93d8);"><i class="fas fa-phone"></i></div>
+        <h3>Save Important Contacts</h3>
+        <p>Save warden's number, security, health center, and your class representative's contact. Also, share your roommate's number with your parents.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#00838f,#4dd0e1);"><i class="fas fa-smile"></i></div>
+        <h3>Attend All Orientation Sessions</h3>
+        <p>Orientation might seem boring, but it gives you crucial info about rules, facilities, and opportunities. Plus, it's a great way to meet people!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <section class="section" style="text-align:center;">
+    <p class="section-subtitle" style="margin:0 auto 2rem;">Now let's talk about surviving college like a pro.</p>
+    <a href="survival.html" class="btn btn-gold">
+      <i class="fas fa-shield-alt"></i> Open Survival Kit
+    </a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">Campus <span>Compass</span></div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="clubs.html">Clubs</a></li>
+        <li><a href="campus.html">Campus</a></li>
+        <li><a href="survival.html">Survival</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">Built with <span style="color:#e53935;">❤</span> for Amrita Vishwa Vidyapeetham, Amaravati | Batch of 2026</div>
+  </footer>
+
+  <button class="theme-toggle"><i class="fas fa-sun"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>

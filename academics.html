@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Life | Campus Compass - Amrita Amaravati</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="loader">
+    <div class="loader-text">Academic <span>Life</span></div>
+    <div class="loader-bar"><div class="loader-bar-inner"></div></div>
+  </div>
+  <div class="progress-bar"></div>
+  <div class="bg-animation">
+    <div class="orb"></div><div class="orb"></div><div class="orb"></div>
+  </div>
+  <canvas id="particle-canvas"></canvas>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">CC</div>
+      <div class="logo-text">Campus <span>Compass</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="academics.html" class="active">Academics</a></li>
+      <li><a href="clubs.html">Clubs</a></li>
+      <li><a href="campus.html">Campus Life</a></li>
+      <li><a href="survival.html">Survival Kit</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <section class="hero" style="min-height:70vh;">
+    <div class="hero-bg">
+      <img src="assets/2_Labs_Amrita_Vishwa_Vidyapeetham.png" alt="Labs">
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge"><i class="fas fa-book-open"></i> Academic Excellence</div>
+      <h1 class="hero-title" style="font-size:4rem;">Academic <span>Life</span></h1>
+      <p class="hero-subtitle">Everything you need to know about branches, classes, exams, and maintaining a stellar CGPA at Amrita Amaravati.</p>
+    </div>
+  </section>
+
+  <!-- B.Tech Branches -->
+  <section class="section">
+    <h2 class="section-title reveal">B.Tech Branches Available</h2>
+    <p class="section-subtitle reveal">Choose your path wisely. Each branch opens doors to unique career opportunities.</p>
+    <div class="grid-2">
+      <div class="branch-card reveal">
+        <span class="branch-code">CSE</span>
+        <h3><i class="fas fa-laptop-code" style="color:#ffd700;margin-right:10px;"></i>Computer Science & Engineering</h3>
+        <p>The most popular branch! Dive into programming, AI/ML, data structures, algorithms, web development, and software engineering. Perfect for tech enthusiasts and future software developers.</p>
+        <div style="margin-top:1rem;display:flex;gap:0.5rem;flex-wrap:wrap;">
+          <span class="tag">AI & ML</span><span class="tag tag-blue">Web Dev</span><span class="tag tag-red">Data Science</span>
+        </div>
+      </div>
+      <div class="branch-card reveal">
+        <span class="branch-code">CSE-AI</span>
+        <h3><i class="fas fa-brain" style="color:#ffd700;margin-right:10px;"></i>CSE — Artificial Intelligence</h3>
+        <p>Specialized in AI, Machine Learning, Deep Learning, Neural Networks, and Natural Language Processing. The future is AI, and this branch puts you right at the forefront.</p>
+        <div style="margin-top:1rem;display:flex;gap:0.5rem;flex-wrap:wrap;">
+          <span class="tag">Deep Learning</span><span class="tag tag-blue">NLP</span><span class="tag tag-red">Computer Vision</span>
+        </div>
+      </div>
+      <div class="branch-card reveal">
+        <span class="branch-code">CSE-DS</span>
+        <h3><i class="fas fa-database" style="color:#ffd700;margin-right:10px;"></i>CSE — Data Science</h3>
+        <p>Master the art of extracting insights from data. Learn statistics, data visualization, big data technologies, predictive modeling, and business analytics.</p>
+        <div style="margin-top:1rem;display:flex;gap:0.5rem;flex-wrap:wrap;">
+          <span class="tag">Big Data</span><span class="tag tag-blue">Analytics</span><span class="tag tag-red">Visualization</span>
+        </div>
+      </div>
+      <div class="branch-card reveal">
+        <span class="branch-code">CSE-CY</span>
+        <h3><i class="fas fa-shield-alt" style="color:#ffd700;margin-right:10px;"></i>CSE — Cyber Security</h3>
+        <p>Become a digital guardian! Learn ethical hacking, network security, cryptography, digital forensics, and vulnerability assessment. High demand in the industry.</p>
+        <div style="margin-top:1rem;display:flex;gap:0.5rem;flex-wrap:wrap;">
+          <span class="tag">Ethical Hacking</span><span class="tag tag-blue">Cryptography</span><span class="tag tag-red">Forensics</span>
+        </div>
+      </div>
+      <div class="branch-card reveal">
+        <span class="branch-code">ECE</span>
+        <h3><i class="fas fa-microchip" style="color:#ffd700;margin-right:10px;"></i>Electronics & Communication</h3>
+        <p>Explore circuits, signals, VLSI design, embedded systems, and communication networks. The bridge between hardware and software innovation.</p>
+        <div style="margin-top:1rem;display:flex;gap:0.5rem;flex-wrap:wrap;">
+          <span class="tag">VLSI</span><span class="tag tag-blue">Embedded</span><span class="tag tag-red">IoT</span>
+        </div>
+      </div>
+      <div class="branch-card reveal">
+        <span class="branch-code">MECH</span>
+        <h3><i class="fas fa-cogs" style="color:#ffd700;margin-right:10px;"></i>Mechanical Engineering</h3>
+        <p>Design, analyze, and manufacture mechanical systems. Covers thermodynamics, fluid mechanics, robotics, CAD/CAM, and automotive engineering.</p>
+        <div style="margin-top:1rem;display:flex;gap:0.5rem;flex-wrap:wrap;">
+          <span class="tag">CAD/CAM</span><span class="tag tag-blue">Robotics</span><span class="tag tag-red">Thermodynamics</span>
+        </div>
+      </div>
+      <div class="branch-card reveal">
+        <span class="branch-code">CIVIL</span>
+        <h3><i class="fas fa-building" style="color:#ffd700;margin-right:10px;"></i>Civil Engineering</h3>
+        <p>Build the world around you! Learn structural analysis, geotechnical engineering, transportation, environmental engineering, and construction management.</p>
+        <div style="margin-top:1rem;display:flex;gap:0.5rem;flex-wrap:wrap;">
+          <span class="tag">Structures</span><span class="tag tag-blue">Surveying</span><span class="tag tag-red">Construction</span>
+        </div>
+      </div>
+      <div class="branch-card reveal">
+        <span class="branch-code">EEE</span>
+        <h3><i class="fas fa-bolt" style="color:#ffd700;margin-right:10px;"></i>Electrical & Electronics</h3>
+        <p>Power systems, control systems, electrical machines, and renewable energy. Essential for the world's transition to sustainable energy.</p>
+        <div style="margin-top:1rem;display:flex;gap:0.5rem;flex-wrap:wrap;">
+          <span class="tag">Power Systems</span><span class="tag tag-blue">Renewables</span><span class="tag tag-red">Controls</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How Classes Work -->
+  <section class="section">
+    <h2 class="section-title reveal">How Classes, Labs & Practicals Work</h2>
+    <p class="section-subtitle reveal">Understanding the academic structure will help you plan your days better.</p>
+    <div class="grid-3">
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#1976d2,#42a5f5);"><i class="fas fa-chalkboard-teacher"></i></div>
+        <h3>Theory Classes</h3>
+        <p>Each subject has 3-4 theory sessions per week (50 minutes each). Classes run from 8:30 AM to 4:30 PM with breaks. Attendance is mandatory and tracked via biometric/ERP system.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#388e3c,#66bb6a);"><i class="fas fa-flask"></i></div>
+        <h3>Lab Sessions</h3>
+        <p>Practical labs run for 2-3 hours per subject weekly. You must carry your lab manual, observation book, and required equipment. Lab attendance is separate and equally important.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#f57c00,#ffb74d);"><i class="fas fa-project-diagram"></i></div>
+        <h3>Projects & Mini-Projects</h3>
+        <p>Every semester includes mini-projects or assignments. Final year has a major project. Start thinking about project ideas early — they can make or break your resume!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Attendance Rules -->
+  <section class="section">
+    <h2 class="section-title reveal">Attendance Rules</h2>
+    <p class="section-subtitle reveal">This is NON-NEGOTIABLE. Read carefully.</p>
+    <div class="grid-2">
+      <div class="card reveal" style="border-left:4px solid #ffd700;">
+        <h3 style="color:#ffd700;margin-bottom:1rem;"><i class="fas fa-check-circle"></i> Minimum Requirement</h3>
+        <p style="color:var(--gray);line-height:1.8;">You MUST maintain a minimum of <strong style="color:#fff;">75% attendance</strong> in every subject (theory + lab combined). Falling below 75% means you are NOT eligible to write the End Semester Exam (ESE) for that subject.</p>
+        <div style="margin-top:1.5rem;padding:1rem;background:rgba(255,215,0,0.1);border-radius:12px;">
+          <p style="color:#ffd700;font-weight:600;"><i class="fas fa-exclamation-triangle"></i> Pro Tip: Aim for 85%+ to be safe. Unexpected leaves happen!</p>
+        </div>
+      </div>
+      <div class="card reveal" style="border-left:4px solid #e53935;">
+        <h3 style="color:#e53935;margin-bottom:1rem;"><i class="fas fa-times-circle"></i> What Happens If You Fall Short?</h3>
+        <p style="color:var(--gray);line-height:1.8;">If your attendance drops below 75%, you get a <strong style="color:#fff;">"Detained"</strong> status. This means:</p>
+        <ul style="color:var(--gray);margin-top:1rem;padding-left:1.5rem;line-height:2;">
+          <li>You cannot write the ESE for that subject</li>
+          <li>You must re-register for the course next semester/year</li>
+          <li>It delays your graduation and affects your CGPA</li>
+          <li>It looks bad on your academic record</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card reveal" style="margin-top:2rem;text-align:center;">
+      <h3 style="margin-bottom:1rem;"><i class="fas fa-calendar-check" style="color:#ffd700;"></i> How Attendance is Calculated</h3>
+      <p style="color:var(--gray);max-width:700px;margin:0 auto;line-height:1.8;">Attendance = (Classes Attended / Total Classes Conducted) × 100. Both theory and lab attendance are tracked separately and then combined. Medical leave (with valid certificate) may be considered on a case-by-case basis, but don't rely on it!</p>
+    </div>
+  </section>
+
+  <!-- Exam Pattern -->
+  <section class="section">
+    <h2 class="section-title reveal">Exam Pattern: CIA + ESE</h2>
+    <p class="section-subtitle reveal">Understanding the grading system is key to acing your academics.</p>
+    <div class="grid-2">
+      <div class="card reveal">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;">
+          <div style="width:60px;height:60px;border-radius:16px;background:linear-gradient(135deg,#c62828,#e53935);display:flex;align-items:center;justify-content:center;font-size:1.5rem;"><i class="fas fa-clipboard-list"></i></div>
+          <div><h3 style="margin:0;">CIA — Continuous Internal Assessment</h3><p style="color:var(--gray);font-size:0.9rem;">40% of total marks</p></div>
+        </div>
+        <ul style="color:var(--gray);padding-left:1.5rem;line-height:2;">
+          <li><strong>CIA 1:</strong> First internal exam (around Week 6-7)</li>
+          <li><strong>CIA 2:</strong> Second internal exam (around Week 12-13)</li>
+          <li><strong>Assignments & Quizzes:</strong> Regular assessments throughout</li>
+          <li><strong>Lab Internals:</strong> Practical exams and viva</li>
+          <li><strong>Total CIA weightage:</strong> 40 marks out of 100</li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;">
+          <div style="width:60px;height:60px;border-radius:16px;background:linear-gradient(135deg,#1a237e,#5c6bc0);display:flex;align-items:center;justify-content:center;font-size:1.5rem;"><i class="fas fa-file-alt"></i></div>
+          <div><h3 style="margin:0;">ESE — End Semester Exam</h3><p style="color:var(--gray);font-size:0.9rem;">60% of total marks</p></div>
+        </div>
+        <ul style="color:var(--gray);padding-left:1.5rem;line-height:2;">
+          <li><strong>Duration:</strong> 3 hours per subject</li>
+          <li><strong>Pattern:</strong> Mix of MCQs, short answers, and long answers</li>
+          <li><strong>Weightage:</strong> 60 marks out of 100</li>
+          <li><strong>Passing:</strong> Minimum 40% in ESE + overall 50%</li>
+          <li><strong>Supplementary:</strong> Re-exam if you fail (try to avoid this!)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card reveal" style="margin-top:2rem;">
+      <h3 style="text-align:center;margin-bottom:1.5rem;"><i class="fas fa-chart-line" style="color:#ffd700;"></i> CGPA Calculation</h3>
+      <div class="grid-4" style="text-align:center;">
+        <div><div class="stat-number">O</div><p style="color:var(--gray);font-size:0.9rem;">Outstanding (90-100)<br>10 Grade Points</p></div>
+        <div><div class="stat-number">A+</div><p style="color:var(--gray);font-size:0.9rem;">Excellent (80-89)<br>9 Grade Points</p></div>
+        <div><div class="stat-number">A</div><p style="color:var(--gray);font-size:0.9rem;">Very Good (70-79)<br>8 Grade Points</p></div>
+        <div><div class="stat-number">B+</div><p style="color:var(--gray);font-size:0.9rem;">Good (60-69)<br>7 Grade Points</p></div>
+      </div>
+      <p style="text-align:center;color:var(--gray);margin-top:1.5rem;">CGPA = Sum of (Grade Points × Credits) / Total Credits. Aim for 8.5+ CGPA for top placements!</p>
+    </div>
+  </section>
+
+  <!-- CGPA Tips -->
+  <section class="section">
+    <h2 class="section-title reveal">Tips to Maintain a Good CGPA from Day 1</h2>
+    <p class="section-subtitle reveal">Follow these golden rules and you'll be among the toppers.</p>
+    <div class="grid-2">
+      <div class="info-card reveal">
+        <div class="info-card-icon"><i class="fas fa-book-reader"></i></div>
+        <div class="info-card-body">
+          <h4>Attend Every Class</h4>
+          <p>It sounds obvious, but skipping classes is the #1 reason students struggle. Professors often share exam hints and important topics only in class.</p>
+        </div>
+      </div>
+      <div class="info-card reveal">
+        <div class="info-card-icon" style="background:linear-gradient(135deg,#1a237e,#5c6bc0);"><i class="fas fa-pen-fancy"></i></div>
+        <div class="info-card-body">
+          <h4>Take Good Notes</h4>
+          <p>Write notes in your own words. Use diagrams and flowcharts. Review them weekly, not just before exams. Good notes = Easy revision.</p>
+        </div>
+      </div>
+      <div class="info-card reveal">
+        <div class="info-card-icon" style="background:linear-gradient(135deg,#2e7d32,#66bb6a);"><i class="fas fa-users"></i></div>
+        <div class="info-card-body">
+          <h4>Form Study Groups</h4>
+          <p>Study with 2-3 friends from your branch. Explain concepts to each other. Teaching is the best way to learn. Plus, group studies are more fun!</p>
+        </div>
+      </div>
+      <div class="info-card reveal">
+        <div class="info-card-icon" style="background:linear-gradient(135deg,#f57c00,#ffb74d);"><i class="fas fa-laptop-code"></i></div>
+        <div class="info-card-body">
+          <h4>Practice Coding Daily</h4>
+          <p>If you're in CSE/CSE-AI/CSE-DS, code every single day. Use LeetCode, HackerRank, or GeeksforGeeks. 30 minutes daily is better than 5 hours before exams.</p>
+        </div>
+      </div>
+      <div class="info-card reveal">
+        <div class="info-card-icon" style="background:linear-gradient(135deg,#6a1b9a,#ce93d8);"><i class="fas fa-clock"></i></div>
+        <div class="info-card-body">
+          <h4>Start Assignments Early</h4>
+          <p>Don't procrastinate. Start assignments the day they're given. Last-minute submissions are stressful and usually lower quality.</p>
+        </div>
+      </div>
+      <div class="info-card reveal">
+        <div class="info-card-icon" style="background:linear-gradient(135deg,#c62828,#e53935);"><i class="fas fa-brain"></i></div>
+        <div class="info-card-body">
+          <h4>Use NPTEL & Online Resources</h4>
+          <p>Amrita has tie-ups with NPTEL. Watch video lectures, solve previous year papers, and use online platforms to strengthen weak topics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navigation to Next Page -->
+  <section class="section" style="text-align:center;">
+    <p class="section-subtitle" style="margin:0 auto 2rem;">Ready to explore the vibrant club culture?</p>
+    <a href="clubs.html" class="btn btn-gold">
+      <i class="fas fa-users"></i> Explore Clubs & Activities
+    </a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">Campus <span>Compass</span></div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="clubs.html">Clubs</a></li>
+        <li><a href="campus.html">Campus</a></li>
+        <li><a href="survival.html">Survival</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">Built with <span style="color:#e53935;">❤</span> for Amrita Vishwa Vidyapeetham, Amaravati | Batch of 2026</div>
+  </footer>
+
+  <button class="theme-toggle"><i class="fas fa-sun"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>

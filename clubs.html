@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clubs & Extracurriculars | Campus Compass - Amrita Amaravati</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="loader">
+    <div class="loader-text">Clubs & <span>Activities</span></div>
+    <div class="loader-bar"><div class="loader-bar-inner"></div></div>
+  </div>
+  <div class="progress-bar"></div>
+  <div class="bg-animation">
+    <div class="orb"></div><div class="orb"></div><div class="orb"></div>
+  </div>
+  <canvas id="particle-canvas"></canvas>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">CC</div>
+      <div class="logo-text">Campus <span>Compass</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="clubs.html" class="active">Clubs</a></li>
+      <li><a href="campus.html">Campus Life</a></li>
+      <li><a href="survival.html">Survival Kit</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <section class="hero" style="min-height:70vh;">
+    <div class="hero-bg">
+      <img src="assets/1_Amrita_Vishwa_Vidyapeetham.png" alt="Students">
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge"><i class="fas fa-star"></i> Beyond the Classroom</div>
+      <h1 class="hero-title" style="font-size:4rem;">Clubs & <span>Extracurriculars</span></h1>
+      <p class="hero-subtitle">College isn't just about grades. Join clubs, build skills, make friends, and create memories that last a lifetime.</p>
+    </div>
+  </section>
+
+  <!-- Why Join Clubs -->
+  <section class="section">
+    <h2 class="section-title reveal">Why Joining Clubs Matters for Your Career</h2>
+    <p class="section-subtitle reveal">Recruiters don't just look at your CGPA. They look at what you've DONE.</p>
+    <div class="grid-3">
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#c62828,#ff7043);"><i class="fas fa-briefcase"></i></div>
+        <h3>Boost Your Resume</h3>
+        <p>Club experience shows leadership, teamwork, and initiative. "President of Chakravyuha" looks way better than just "B.Tech CSE" on your resume.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#1a237e,#5c6bc0);"><i class="fas fa-network-wired"></i></div>
+        <h3>Build Your Network</h3>
+        <p>Clubs connect you with seniors, alumni, and industry professionals. Your club network can open doors to internships and job referrals.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#2e7d32,#66bb6a);"><i class="fas fa-lightbulb"></i></div>
+        <h3>Learn Practical Skills</h3>
+        <p>Clubs teach you things classrooms don't — project management, public speaking, event planning, and real-world problem solving.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#f57c00,#ffb74d);"><i class="fas fa-trophy"></i></div>
+        <h3>Win Competitions</h3>
+        <p>Clubs participate in national and international competitions. Winning hackathons, robotics contests, or design challenges adds serious weight to your profile.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#6a1b9a,#ce93d8);"><i class="fas fa-heart"></i></div>
+        <h3>Find Your Passion</h3>
+        <p>Not sure what you love? Try different clubs. You might discover a passion for design, public speaking, or social service that changes your career path.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon" style="background:linear-gradient(135deg,#00838f,#4dd0e1);"><i class="fas fa-user-friends"></i></div>
+        <h3>Make Lifelong Friends</h3>
+        <p>The friends you make in clubs often become your closest bonds in college. Shared goals and late-night projects create unbreakable friendships.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Apply -->
+  <section class="section">
+    <h2 class="section-title reveal">How to Apply or Get Selected into Clubs</h2>
+    <p class="section-subtitle reveal">Most clubs have a selection process. Here's what to expect.</p>
+    <div class="timeline reveal">
+      <div class="timeline-item">
+        <h4>Step 1: Attend the Intro Session</h4>
+        <p>Every club conducts an introductory session in the first month. Attend as many as you can. Listen to what they do, their achievements, and their vision.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Step 2: Fill the Application Form</h4>
+        <p>Clubs release application forms (usually Google Forms) after intro sessions. Fill them carefully. Be honest about your skills and interests.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Step 3: Technical/Skill Test</h4>
+        <p>Technical clubs like Chakravyuha may have coding tests, project reviews, or problem-solving challenges. Creative clubs may ask for a portfolio. Prepare well!</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Step 4: Interview Round</h4>
+        <p>Shortlisted candidates face an interview. Be confident, show enthusiasm, and demonstrate why YOU are the right fit. Ask questions about the club too!</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Step 5: Get Selected & Start Contributing</h4>
+        <p>If selected, you'll receive an official welcome. Attend regular meetings, take up responsibilities, and start contributing to projects and events.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Major Clubs -->
+  <section class="section">
+    <h2 class="section-title reveal">Major Clubs at Amrita Amaravati</h2>
+    <p class="section-subtitle reveal">Here's a comprehensive list of clubs you can join.</p>
+    <div class="grid-3">
+      <!-- Chakravyuha -->
+      <div class="club-card reveal" style="border:2px solid rgba(255,215,0,0.4);">
+        <div class="club-card-img" style="background:linear-gradient(135deg,#c62828,#ff6f00);">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="club-card-body">
+          <h3>Chakravyuha Technical Club <span class="tag" style="font-size:0.7rem;">⭐ FEATURED</span></h3>
+          <p>The flagship technical club of Amrita Amaravati with 350+ members. Organizes hackathons, coding competitions, workshops on AI/ML, web dev, and more. The team behind this very challenge!</p>
+          <div class="club-tags">
+            <span class="tag">Coding</span><span class="tag tag-red">Hackathons</span><span class="tag tag-blue">AI/ML</span>
+          </div>
+        </div>
+      </div>
+      <div class="club-card reveal">
+        <div class="club-card-img" style="background:linear-gradient(135deg,#1a237e,#7c4dff);">
+          <i class="fas fa-paint-brush"></i>
+        </div>
+        <div class="club-card-body">
+          <h3>Creative Arts Club</h3>
+          <p>For the artists, designers, and creators. Works on posters, banners, video editing, UI/UX design, and social media content for college events.</p>
+          <div class="club-tags">
+            <span class="tag">Design</span><span class="tag tag-red">Video</span><span class="tag tag-blue">UI/UX</span>
+          </div>
+        </div>
+      </div>
+      <div class="club-card reveal">
+        <div class="club-card-img" style="background:linear-gradient(135deg,#2e7d32,#66bb6a);">
+          <i class="fas fa-robot"></i>
+        </div>
+        <div class="club-card-body">
+          <h3>Robotics & IoT Club</h3>
+          <p>Build robots, drones, and IoT devices. Participates in national robotics competitions. Perfect for hardware enthusiasts and tinkerers.</p>
+          <div class="club-tags">
+            <span class="tag">Robotics</span><span class="tag tag-red">Drones</span><span class="tag tag-blue">IoT</span>
+          </div>
+        </div>
+      </div>
+      <div class="club-card reveal">
+        <div class="club-card-img" style="background:linear-gradient(135deg,#f57c00,#ffca28);">
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <div class="club-card-body">
+          <h3>Literary & Debate Club</h3>
+          <p>Sharpen your communication skills. Participates in debates, quizzes, elocutions, and literary competitions at inter-college levels.</p>
+          <div class="club-tags">
+            <span class="tag">Debate</span><span class="tag tag-red">Quizzes</span><span class="tag tag-blue">Public Speaking</span>
+          </div>
+        </div>
+      </div>
+      <div class="club-card reveal">
+        <div class="club-card-img" style="background:linear-gradient(135deg,#6a1b9a,#ce93d8);">
+          <i class="fas fa-music"></i>
+        </div>
+        <div class="club-card-body">
+          <h3>Music & Cultural Club</h3>
+          <p>Singing, dancing, instruments, and drama. Performs at college fests, cultural events, and inter-college competitions. The heartbeat of every celebration!</p>
+          <div class="club-tags">
+            <span class="tag">Music</span><span class="tag tag-red">Dance</span><span class="tag tag-blue">Drama</span>
+          </div>
+        </div>
+      </div>
+      <div class="club-card reveal">
+        <div class="club-card-img" style="background:linear-gradient(135deg,#00838f,#4dd0e1);">
+          <i class="fas fa-camera"></i>
+        </div>
+        <div class="club-card-body">
+          <h3>Photography Club</h3>
+          <p>Capture moments that matter. Covers all college events, conducts photo walks, and teaches editing techniques. Great for building a portfolio.</p>
+          <div class="club-tags">
+            <span class="tag">Photography</span><span class="tag tag-red">Editing</span><span class="tag tag-blue">Videography</span>
+          </div>
+        </div>
+      </div>
+      <div class="club-card reveal">
+        <div class="club-card-img" style="background:linear-gradient(135deg,#c62828,#e53935);">
+          <i class="fas fa-futbol"></i>
+        </div>
+        <div class="club-card-body">
+          <h3>Sports Club</h3>
+          <p>Cricket, football, basketball, badminton, volleyball, and athletics. Regular practice sessions and inter-college tournaments. Stay fit, stay competitive!</p>
+          <div class="club-tags">
+            <span class="tag">Cricket</span><span class="tag tag-red">Football</span><span class="tag tag-blue">Basketball</span>
+          </div>
+        </div>
+      </div>
+      <div class="club-card reveal">
+        <div class="club-card-img" style="background:linear-gradient(135deg,#1a237e,#5c6bc0);">
+          <i class="fas fa-hands-helping"></i>
+        </div>
+        <div class="club-card-body">
+          <h3>Social Service Club</h3>
+          <p>Give back to society. Organizes blood donation camps, tree plantations, teaching underprivileged kids, and community service activities.</p>
+          <div class="club-tags">
+            <span class="tag">Social Work</span><span class="tag tag-red">NGO</span><span class="tag tag-blue">Community</span>
+          </div>
+        </div>
+      </div>
+      <div class="club-card reveal">
+        <div class="club-card-img" style="background:linear-gradient(135deg,#2e7d32,#43a047);">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="club-card-body">
+          <h3>Entrepreneurship Cell (E-Cell)</h3>
+          <p>For future founders! Learn about startups, business models, pitching, and funding. Organizes startup weekends and connects with investors.</p>
+          <div class="club-tags">
+            <span class="tag">Startups</span><span class="tag tag-red">Business</span><span class="tag tag-blue">Pitching</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chakravyuha Spotlight -->
+  <section class="section" style="background:rgba(198,40,40,0.05);border-radius:30px;margin:0 5%;">
+    <h2 class="section-title reveal"><i class="fas fa-star" style="color:#ffd700;"></i> Chakravyuha Technical Club — Spotlight</h2>
+    <p class="section-subtitle reveal">The crown jewel of Amrita Amaravati's technical community</p>
+    <div class="grid-2">
+      <div class="card reveal">
+        <h3 style="color:#ffd700;margin-bottom:1rem;"><i class="fas fa-users"></i> 350+ Members Strong</h3>
+        <p style="color:var(--gray);line-height:1.8;">Chakravyuha is the largest and most active technical club on campus. From first-year freshers to final-year seniors, everyone contributes to making it the powerhouse it is.</p>
+      </div>
+      <div class="card reveal">
+        <h3 style="color:#ffd700;margin-bottom:1rem;"><i class="fas fa-trophy"></i> What They Do</h3>
+        <ul style="color:var(--gray);padding-left:1.5rem;line-height:2;">
+          <li>Organize hackathons and coding contests</li>
+          <li>Conduct workshops on latest technologies</li>
+          <li>Host guest lectures from industry experts</li>
+          <li>Build real-world projects for the college</li>
+          <li>Participate in national-level tech fests</li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <h3 style="color:#ffd700;margin-bottom:1rem;"><i class="fas fa-rocket"></i> Domains</h3>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:1rem;">
+          <span class="tag">Web Development</span><span class="tag tag-red">App Development</span>
+          <span class="tag tag-blue">AI & Machine Learning</span><span class="tag">Cyber Security</span>
+          <span class="tag tag-red">Cloud Computing</span><span class="tag tag-blue">Blockchain</span>
+        </div>
+      </div>
+      <div class="card reveal">
+        <h3 style="color:#ffd700;margin-bottom:1rem;"><i class="fas fa-handshake"></i> How to Join</h3>
+        <p style="color:var(--gray);line-height:1.8;">Attend their intro session in the first month. Fill the application form. Clear the coding/technical test. Ace the interview. Show passion, not just skills. Chakravyuha values enthusiasm and dedication above everything!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <section class="section" style="text-align:center;">
+    <p class="section-subtitle" style="margin:0 auto 2rem;">Ready to see where you'll live?</p>
+    <a href="campus.html" class="btn btn-gold">
+      <i class="fas fa-home"></i> Explore Campus & Hostel Life
+    </a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">Campus <span>Compass</span></div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="clubs.html">Clubs</a></li>
+        <li><a href="campus.html">Campus</a></li>
+        <li><a href="survival.html">Survival</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">Built with <span style="color:#e53935;">❤</span> for Amrita Vishwa Vidyapeetham, Amaravati | Batch of 2026</div>
+  </footer>
+
+  <button class="theme-toggle"><i class="fas fa-sun"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>
